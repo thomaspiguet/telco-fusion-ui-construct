@@ -1,0 +1,66 @@
+//Valeurs des variables qui seront override par telco360/styles
+$white: white !default;
+$secondary: blue !default;
+$above-secondary-color: black !default;
+$gray-base: #3c4b64 !default;
+$gray-200: lighten($gray-base, 84.8%) !default; // CoreUI : #d8dbe0 !default;
+$gray-150: $gray-200 !default; // Gris personalise.  Ne fait pas partie des variables de CoreUI.
+
+$bg-color: $white !default;
+
+.sxTable {
+    table-layout: fixed;
+    width: 100%;
+}
+
+.sxTable > tbody > tr:hover,
+.sxTable.striped > tbody > tr:nth-of-type(even):hover,
+.sxTable.striped > tbody > tr:nth-of-type(odd):hover {
+    background-color: var(--secondary, $secondary);
+    color: var(--above-secondary-color, $above-secondary-color);
+
+    a {
+        color: var(--above-secondary-color, $above-secondary-color);
+    }
+}
+
+.sxtable-row-expended {
+    border-width: 4px;
+    border: dashed;
+}
+
+.sxTable.striped > tbody > tr:nth-of-type(even) {
+    background-color: var(--bg-color, $bg-color);
+}
+
+.sxTable.striped > tbody > tr:nth-of-type(odd) {
+    background-color: #f9f9f9; //ToDo AG_2022-03-14 : For some reason, all grays are always white.... out of scope for my jira...
+}
+
+.row-dirty {
+    font-weight: bold;
+}
+
+.row-disabled {
+    background-color: $gray-150;
+}
+
+.card .bgControls.card-header{
+    background-color: inherit;
+}
+
+.sxTable-summary {
+    background-color: var(--secondary, $secondary);
+    color: var(--above-secondary-color, $above-secondary-color)
+}
+
+.sxTable-maxLines {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--maxLines);
+    -webkit-box-orient: vertical;
+}
+
+.resizableColumn {
+    resize: horizontal;
+    overflow-x: auto;
+}

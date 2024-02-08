@@ -1,0 +1,213 @@
+// Override des settings de CoreUI
+$body-color: $white !default;
+$danger: #f86c6b !default;
+$info: #63c2de !default;
+$primary: #3cb3e7 !default;
+$secondary: #ade2ff !default;
+$success: #4dbd74 !default;
+$warning: #ffc107 !default;
+$white: white !default;
+
+$input-bg: $secondary !default;
+$input-color: $body-color !default;
+$input-border-color: #e4e7ea !default;
+$input-disabled-color: #9094A8 !default;
+$input-disabled-bg: #E6E6E6 !default;
+$input-disabled-border-color: #96A3AB !default;
+
+$dark: black !default;
+$light: $white !default;
+
+// Ajout de classes css pour déterminer un z-index via des classNames à la manière bootstrap.
+@for $i from 1 through 10 {
+    .z-index-#{$i} {
+      z-index: #{$i};
+    }
+  }
+
+.overflow-y-hidden {
+    overflow-y: hidden;
+}
+
+.overflow-x-hidden {
+    overflow-x: hidden;
+}
+
+.white-space-pre {
+    white-space: pre !important;
+}
+
+// Debut : Elements de styles pour les boutons
+$colors: ( "danger": $danger, "primary": $primary, "secondary": $secondary, "success": $success, "warning": $warning, "dark": $dark ) !default;
+
+@each $color, $value in $colors {
+    .btn-outline-#{$color}:not(:disabled):active {
+        background-color: var(--#{$color}, $value);
+    }
+
+    .btn-outline-#{$color} {
+        color: var(--#{$color}-outline-color, var(--#{$color}, $value));
+    }
+
+    .btn-#{$color}.outline:not(:hover):not(:active), .btn-outline-#{$color}:not(:hover):not(:active) {
+        border-color: var(--#{$color}, $value) !important;
+    }
+
+    .btn-outline-#{$color}:not(:disabled):not(:disabled):active {
+        background-color: var(--#{$color}, $value);
+    }
+
+    .btn-#{$color}:not(.outline) {
+        background-color: var(--#{$color}, $value) !important;
+        color: var(--above-#{$color}-color, $body-color);
+    }
+
+    .btn-#{$color} {
+        border-color: var(--#{$color}, $value) !important;
+    }
+
+    .btn-outline-#{$color}:not(:disabled):active {
+        color: var(--above-#{$color}-color, white); // Idealement on mettrait une couleur specifique qui contraste mais on a une regle generale ici pour le defaut.
+    }
+
+    .btn-outline-#{$color}:disabled, .btn-outline-#{$color}.disabled {
+        background-color: transparent !important;
+        color: var(--#{$color}-outline-disabled-color, $value) !important;
+    }
+}
+
+@media(hover: hover), (-ms-high-contrast: none) {
+
+    @each $color, $value in $colors {
+        .btn-#{$color}:not(:disabled):hover,
+        .btn-outline-#{$color}:not(:disabled):hover {
+            filter: brightness(var(--#{$color}-focus-brightness, var(--default-focus-brightness, 1.15)));
+        }
+
+        .btn-outline-#{$color}:not(:disabled):hover {
+            background-color: var(--#{$color}, $value);
+        }
+
+        .btn-outline-#{$color}:not(:disabled):hover {
+            color: var(--above-#{$color}-color, white); // Valeur par defaut ne peut pas etre personnalisee.
+        }
+    }
+}
+
+@each $color, $value in $colors {
+    .btn-#{$color}:not(:disabled):active,
+    .btn-outline-#{$color}:not(:disabled):active,
+    .show > .btn-#{$color}.dropdown-toggle {
+        filter: brightness(var(--#{$color}-focus-brightness, var(--default-focus-brightness, 1.07)));
+    }
+
+    .btn-#{$color}:not(:disabled):not(:disabled):active:focus, .btn-#{$color}:not(:disabled):not(:disabled):focus, .show > .btn-#{$color}.dropdown-toggle:focus,
+    .btn-outline-#{$color}:not(:disabled):not(:disabled):active:focus, .btn-outline-#{$color}:not(:disabled):not(:disabled):focus, .show > .btn-outline-#{$color}.dropdown-toggle:focus {
+        box-shadow: 0 0 0 0.2rem var(--#{$color}-shadow, rgba($value, 50%));
+    }
+
+    .btn-#{$color}:focus {
+        filter: brightness(var(--#{$color}-focus-brightness, var(--default-focus-brightness, 1.07)));
+    }
+
+    .btn-outline-#{$color}:focus {
+        filter: brightness(var(--#{$color}-outline-focus-brightness, var(--#{$color}-focus-brightness, var(--default-focus-brightness, 1.07))));
+    }
+
+    .btn-#{$color}:disabled {
+        filter: brightness(var(--#{$color}-disabled-brightness, var(--default-disabled-brightness, 1.07)));
+    }
+
+    .btn-outline-#{$color}:disabled {
+        filter: brightness(var(--#{$color}-outline-disabled-brightness, var(--default-outline-disabled-brightness, var(--default-disabled-brightness, 1.07))));
+    }
+}
+
+//définition des styles pour les boutons de base
+.btn:not(.btn-primary):not(.btn-secondary):not(.outline):not(.btn-warning):not(.btn-danger):not(.btn-success) {
+    color: inherit;
+    background-color: transparent;
+}
+
+.input-group > :is(.input-group-append .input-group-prepend) > .btn:not(.btn-primary):not(.btn-secondary):not(.outline):not(.btn-warning):not(.btn-danger):not(.btn-success) {
+    color: var(--input-group-addon-btn-color, var(--input-color, $input-color));
+    background-color: var(--input-group-addon-btn-bg-color, var(--input-bg, $input-bg));
+}
+
+.input-group > :is(.input-group-append .input-group-prepend) > .btn:disabled {
+    color: var(--input-group-addon-disabled-color, var(--input-disabled-color, $input-disabled-color)) !important;
+    background-color: var(--input-group-addon-disabled-bg, var(--input-disabled-bg, $input-disabled-bg)) !important;
+    border-color: var(--input-disabled-border-color, $input-disabled-border-color) !important;
+}
+
+.input-group > :is(.input-group-append .input-group-prepend) > .btn {
+  color: var(--input-group-addon-color, var(--input-color, $input-color)) !important;
+  background-color: var(--input-group-addon-bg, var(--input-bg, $input-bg)) !important;
+  border-color: var(--input-border-color, $input-border-color) !important;
+}
+
+.input-group > .input-group-append > *,
+.input-group > .input-group-prepend > *,
+.input-group > * {
+    border: 0;
+}
+
+.input-group {
+    border: 1px solid;
+    border-radius: 6px;
+}
+
+.input-group:not(:has(.form-control:disabled)) {
+    border-color: var(--input-border-color, $input-border-color);
+}
+
+.input-group:has(.form-control:disabled) {
+    border-color: var(--input-disabled-border-color, $input-disabled-border-color);
+}
+
+.form-control:disabled {
+    -webkit-text-fill-color: var(--input-disabled-color, $input-disabled-color); /* Fix pour iOS */
+    opacity: 1; /* Fix pour iOS */
+}
+// Fin : Elements de styles pour les boutons
+
+/* Faire un overload de tous les sélecteurs (plus précis svp) pour les bg-warning, bg-success, bg-danger, ... pour mettre les variables css au lieu de la couleur hardcodée. */
+/* info, success, confirm et message utilisent bg-success en ce moment. */
+.bg-warning {
+    background-color: var(--warning) !important; /* was #f9b115 */
+}
+
+a.bg-warning:hover, a.bg-warning:focus {
+    background-color: var(--warning) !important; /* was #d69405 */
+    filter: brightness(var(--warning-focus-brightness, var(--default-focus-brightness, 0.85)));
+}
+
+.bg-danger {
+    background-color: var(--danger) !important; /* was #e55353 */
+}
+
+a.bg-danger:hover, a.bg-danger:focus {
+    background-color: var(--danger) !important; /* was #de2727 */
+    filter: brightness(var(--danger-focus-brightness, var(--default-focus-brightness, 0.85)));
+}
+
+.bg-success {
+    background-color: var(--success) !important; /* was #39f */
+}
+
+a.bg-success:hover, a.bg-success:focus {
+    background-color: var(--success) !important; /* was #0080ff */
+    filter: brightness(var(--success-focus-brightness, var(--default-focus-brightness, 0.85)));
+}
+
+$textColors: ( "body": $body-color, "danger": $danger, "info": $info, "dark": $dark, "light": $light, "primary": $primary, "secondary": $secondary, "success": $success, "warning": $warning, "muted": "var(--text-muted, $body-color)" ) !default;
+
+@each $color, $value in $textColors {
+    .text-#{$color} {
+        color: var(--text-#{$color}, $value) !important;
+    }
+
+    a.text-#{$color}:hover, a.text-#{$color}:focus {
+        color: var(--text-#{$color}-hover, var(--text-#{$color}, $value)) !important;
+    }
+}

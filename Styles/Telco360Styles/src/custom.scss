@@ -1,0 +1,35 @@
+$black: #051821 !default;
+$primary: #3cb3e7 !default;
+$secondary: #ade2ff !default;
+
+
+.background-dark {
+    background-color: $black; //Ceci est une exception pour l'utilisation des couleurs puisqu'il doit être noir peu importe le thème.
+}
+
+.btn.disabled, .btn:disabled {
+    cursor: default;
+}
+
+// Solution de contournement car bootstrap n'a pas de 'd-contents'
+.d-contents {
+    display: contents !important;
+}
+
+// Solution de contournement car 'opacity-100' n'existe pas avec bootstrap V4.6
+.opacity-100 {
+    opacity: 1 !important;
+}
+
+// Solution de contournement car 'text-decoration-underline' n'existe pas avec bootstrap V4.6
+.text-decoration-underline {
+    text-decoration: underline !important;
+}
+
+a {
+    font-weight: bold;
+}
+
+input {
+    accent-color: var(--primary, $primary);
+}

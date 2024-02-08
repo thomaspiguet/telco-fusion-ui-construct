@@ -1,0 +1,5 @@
+$secondary: #e0f4ff;
+
+.childTableStyle {
+    background-color: var(--secondary, $secondary) !important;
+}

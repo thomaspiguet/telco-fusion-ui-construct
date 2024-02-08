@@ -1,0 +1,138 @@
+//Définition des couleurs
+$bg-elevation-0: #181924 !default; // CoreUI : #181924
+$black: #051821 !default; //#181b1e; // CoreUI : #000015
+$danger: #BA5150 !default; // CoreUI : #e55353
+$gray-base: #000 !default; // CoreUI: #3c4b64
+$info: #63c2de !default; // CoreUI : #39f
+$mark-bg: #fcf8e3 !default; // CoreUI : #fcf8e3
+$pink: #e83e8c !default; // CoreUI : #e83e8c
+$primary: #3cb3e7 !default; // CoreUI : #321fdb
+$secondary: #e0f4ff !default; // CoreUI : #3c4b64
+$secondary-25: #e0f4ff !default; // CoreUI: #ced2d8
+$success: #3D975C !default; // CoreUI : #2eb85c
+$caution: #eaea00 !default; // Ne fait pas partie du kit de couleurs CoreUI.  Besoins internes.
+$warning: #ffc107 !default; // CoreUI : #f9b115
+$white: #fff !default; // CoreUI : #fff
+
+//Variables avec des équivalences en variables CSS pour définition des thèmes.
+$layout-color: $white !default;
+$layout-bg-color: $black !default;
+$bg-color: $white !default;
+$body-color: $black !default;
+$input-bg: $secondary !default;
+$input-color: $body-color !default;
+$input-border-color: #e4e7ea !default;
+$input-disabled-color: $black !default;
+$input-disabled-bg: #E6E6E6 !default;
+$input-disabled-border-color: #96A3AB !default;
+$link-color: $body-color !default;
+$above-danger-color: $white !default;
+$above-primary-color: $white !default;
+$above-secondary-color: $black !default;
+$above-success-color: $white !default;
+$above-warning-color: $black !default;
+$btn-color: $black !default;
+$dropdown-bg: $bg-color !default;
+$dropdown-color: $body-color !default;
+
+// Surcharge des variables de CoreUi
+$link-decoration: underline;
+$btn-disabled-opacity: 0.5; //L'opacité par défaut n'est pas approprié pour les boutons n'ayant pas un background (ex : icones qui sont des boutons)
+$use-live-themes: true !default; //Variable custom pour permettre des thèmes basé sur des variables CSS avec des changements de valeur au runtime.
+
+@import './themeCalc.scss';
+
+
+//Overrides de l'utilisation des couleurs.
+//Attention, fonctionner ainsi va briser les fonctionnalités de variants et de thèmes standard de coreui...
+$theme-overrides: () !default; //Permet à l'utilisateur du package @telco360/styles de définir leurs propres utilisations de style si il le faut.
+//Permet de définir des variables de thèmes n'existant pas dans coreui. Une patch de certaines règles de coreui seront généralement nécessaire pour utiliser ces nouvelles variables.
+$theme-extensions: () !default;
+
+@if $use-live-themes {
+  $theme-overrides: map-merge((
+        "body-bg": var(--bg-color, $bg-color),
+        "body-color": var(--body-color, $body-color),
+        "input-bg": var(--input-bg, $input-bg),
+        "input-color": var(--input-color, $input-color),
+        "input-border-color": var(--input-border-color, $input-border-color),
+        "input-disabled-bg": var(--input-disabled-bg, $input-disabled-bg),
+        "card-cap-bg": var(--primary, $primary),
+        "card-cap-color": var(--above-primary-color, $above-primary-color),
+        "card-bg": var(--bg-color, $bg-color),
+        "footer-bg": var(--bg-color, $bg-color),
+        "footer-color": var(--body-color, $body-color),
+        "link-color": var(--link-color, $link-color),
+        "modal-content-bg": var(--bg-color, $bg-color),
+        "dropdown-bg": var(--dropdown-bg, var(--bg-color, $bg-color)),
+        "dropdown-color": var(--dropdown-color, var(--body-color, $body-color)),
+        "dropdown-link-color": var(--dropdown-link-color, var(--body-color, $body-color)),
+      ), $theme-overrides
+  );
+  $theme-extensions: map-merge((
+        "input-disabled-color": var(--input-disabled-color, $input-disabled-color),
+        "input-disabled-border-color": $input-disabled-border-color,
+      ), $theme-extensions
+  );
+}
+@else{
+  $theme-overrides: map-merge((
+    "body-bg": $white,
+    "body-color": $black,
+    "input-bg": $secondary,
+    "input-disabled-bg": $secondary,
+    "card-cap-bg": $primary,
+    "footer-bg": $white,
+    "footer-color": $black,
+    "link-color": $black,
+  ), $theme-overrides);
+  $theme-extensions: map-merge((
+    "input-disabled-color": $black,
+    "input-disabled-border-color": transparent,
+  ), $theme-extensions);
+}
+
+// Ajout de la police de caractères Barlow
+@font-face {
+  font-family: "barlow";
+  src: url(../assets/font/Barlow-Regular.ttf) format("truetype");
+}
+
+$font-family-sans-serif: barlow, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+@import "./helpers.scss";
+
+@import "./custom.scss";
+
+@import "../node_modules/@coreui/coreui-pro/scss/coreui.scss";
+
+@import "./btn-custom.scss";
+
+@import "./bootstrapExtensions.scss";
+
+@import "./fontAwesome/css/all.min.scss";
+
+:root {
+//Définition des couleurs
+--above-danger-color: #fff;
+--above-primary-color: #fff;
+--above-secondary-color: #051821;
+--above-success-color: #fff;
+--above-warning-color: #051821;
+--bg-elevation-0: #181924;
+--black: #051821;
+--danger: #BA5150;
+--gray-base: #000;
+--info: #63c2de;
+--mark-bg: #fcf8e3;
+--pink: #e83e8c;
+--primary: #3cb3e7;
+--secondary: #e0f4ff;
+--secondary-25: #e0f4ff;
+--success: #3D975C;
+--caution: #eaea00;
+--warning: #ffc107;
+--white: #fff;
+--light: #ebebeb;
+--dark: #636363;
+}

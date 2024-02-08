@@ -1,0 +1,9 @@
+$input-height: 35px !default;
+
+.FieldMsgs {
+    max-width: fit-content;
+}
+
+.fieldCheckbox {
+    min-height: $input-height;
+}

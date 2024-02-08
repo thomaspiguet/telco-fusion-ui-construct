@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
+﻿<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
@@ -7,8 +7,111 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Include="Styles\Telco360Forms\.vscode\settings.json" />
+    <Content Include="Styles\Telco360Tables\.vscode\settings.json" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="8.0.1" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="8.0.1" PrivateAssets="all" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Styles\Telco360Forms\.git\config" />
+    <None Include="Styles\Telco360Forms\.git\description" />
+    <None Include="Styles\Telco360Forms\.git\HEAD" />
+    <None Include="Styles\Telco360Forms\.git\hooks\applypatch-msg.sample" />
+    <None Include="Styles\Telco360Forms\.git\hooks\commit-msg.sample" />
+    <None Include="Styles\Telco360Forms\.git\hooks\fsmonitor-watchman.sample" />
+    <None Include="Styles\Telco360Forms\.git\hooks\post-update.sample" />
+    <None Include="Styles\Telco360Forms\.git\hooks\pre-applypatch.sample" />
+    <None Include="Styles\Telco360Forms\.git\hooks\pre-commit.sample" />
+    <None Include="Styles\Telco360Forms\.git\hooks\pre-merge-commit.sample" />
+    <None Include="Styles\Telco360Forms\.git\hooks\pre-push.sample" />
+    <None Include="Styles\Telco360Forms\.git\hooks\pre-rebase.sample" />
+    <None Include="Styles\Telco360Forms\.git\hooks\pre-receive.sample" />
+    <None Include="Styles\Telco360Forms\.git\hooks\prepare-commit-msg.sample" />
+    <None Include="Styles\Telco360Forms\.git\hooks\push-to-checkout.sample" />
+    <None Include="Styles\Telco360Forms\.git\hooks\sendemail-validate.sample" />
+    <None Include="Styles\Telco360Forms\.git\hooks\update.sample" />
+    <None Include="Styles\Telco360Forms\.git\index" />
+    <None Include="Styles\Telco360Forms\.git\info\exclude" />
+    <None Include="Styles\Telco360Forms\.git\logs\HEAD" />
+    <None Include="Styles\Telco360Forms\.git\logs\refs\heads\main" />
+    <None Include="Styles\Telco360Forms\.git\logs\refs\remotes\origin\HEAD" />
+    <None Include="Styles\Telco360Forms\.git\objects\pack\pack-2f9de3d3ddcb190532050f4578f7ec131bfbfccb.idx" />
+    <None Include="Styles\Telco360Forms\.git\objects\pack\pack-2f9de3d3ddcb190532050f4578f7ec131bfbfccb.pack" />
+    <None Include="Styles\Telco360Forms\.git\objects\pack\pack-2f9de3d3ddcb190532050f4578f7ec131bfbfccb.rev" />
+    <None Include="Styles\Telco360Forms\.git\packed-refs" />
+    <None Include="Styles\Telco360Forms\.git\refs\heads\main" />
+    <None Include="Styles\Telco360Forms\.git\refs\remotes\origin\HEAD" />
+    <None Include="Styles\Telco360Styles\.git\config" />
+    <None Include="Styles\Telco360Styles\.git\description" />
+    <None Include="Styles\Telco360Styles\.git\HEAD" />
+    <None Include="Styles\Telco360Styles\.git\hooks\applypatch-msg.sample" />
+    <None Include="Styles\Telco360Styles\.git\hooks\commit-msg.sample" />
+    <None Include="Styles\Telco360Styles\.git\hooks\fsmonitor-watchman.sample" />
+    <None Include="Styles\Telco360Styles\.git\hooks\post-update.sample" />
+    <None Include="Styles\Telco360Styles\.git\hooks\pre-applypatch.sample" />
+    <None Include="Styles\Telco360Styles\.git\hooks\pre-commit.sample" />
+    <None Include="Styles\Telco360Styles\.git\hooks\pre-merge-commit.sample" />
+    <None Include="Styles\Telco360Styles\.git\hooks\pre-push.sample" />
+    <None Include="Styles\Telco360Styles\.git\hooks\pre-rebase.sample" />
+    <None Include="Styles\Telco360Styles\.git\hooks\pre-receive.sample" />
+    <None Include="Styles\Telco360Styles\.git\hooks\prepare-commit-msg.sample" />
+    <None Include="Styles\Telco360Styles\.git\hooks\push-to-checkout.sample" />
+    <None Include="Styles\Telco360Styles\.git\hooks\sendemail-validate.sample" />
+    <None Include="Styles\Telco360Styles\.git\hooks\update.sample" />
+    <None Include="Styles\Telco360Styles\.git\index" />
+    <None Include="Styles\Telco360Styles\.git\info\exclude" />
+    <None Include="Styles\Telco360Styles\.git\logs\HEAD" />
+    <None Include="Styles\Telco360Styles\.git\logs\refs\heads\master" />
+    <None Include="Styles\Telco360Styles\.git\logs\refs\heads\new-test-ui-ux" />
+    <None Include="Styles\Telco360Styles\.git\logs\refs\remotes\origin\HEAD" />
+    <None Include="Styles\Telco360Styles\.git\objects\pack\pack-47733ac67ed019a769a9bc1f5c0b8c461ea0085f.idx" />
+    <None Include="Styles\Telco360Styles\.git\objects\pack\pack-47733ac67ed019a769a9bc1f5c0b8c461ea0085f.pack" />
+    <None Include="Styles\Telco360Styles\.git\objects\pack\pack-47733ac67ed019a769a9bc1f5c0b8c461ea0085f.rev" />
+    <None Include="Styles\Telco360Styles\.git\packed-refs" />
+    <None Include="Styles\Telco360Styles\.git\refs\heads\master" />
+    <None Include="Styles\Telco360Styles\.git\refs\heads\new-test-ui-ux" />
+    <None Include="Styles\Telco360Styles\.git\refs\remotes\origin\HEAD" />
+    <None Include="Styles\Telco360Tables\.git\config" />
+    <None Include="Styles\Telco360Tables\.git\description" />
+    <None Include="Styles\Telco360Tables\.git\HEAD" />
+    <None Include="Styles\Telco360Tables\.git\hooks\applypatch-msg.sample" />
+    <None Include="Styles\Telco360Tables\.git\hooks\commit-msg.sample" />
+    <None Include="Styles\Telco360Tables\.git\hooks\fsmonitor-watchman.sample" />
+    <None Include="Styles\Telco360Tables\.git\hooks\post-update.sample" />
+    <None Include="Styles\Telco360Tables\.git\hooks\pre-applypatch.sample" />
+    <None Include="Styles\Telco360Tables\.git\hooks\pre-commit.sample" />
+    <None Include="Styles\Telco360Tables\.git\hooks\pre-merge-commit.sample" />
+    <None Include="Styles\Telco360Tables\.git\hooks\pre-push.sample" />
+    <None Include="Styles\Telco360Tables\.git\hooks\pre-rebase.sample" />
+    <None Include="Styles\Telco360Tables\.git\hooks\pre-receive.sample" />
+    <None Include="Styles\Telco360Tables\.git\hooks\prepare-commit-msg.sample" />
+    <None Include="Styles\Telco360Tables\.git\hooks\push-to-checkout.sample" />
+    <None Include="Styles\Telco360Tables\.git\hooks\sendemail-validate.sample" />
+    <None Include="Styles\Telco360Tables\.git\hooks\update.sample" />
+    <None Include="Styles\Telco360Tables\.git\index" />
+    <None Include="Styles\Telco360Tables\.git\info\exclude" />
+    <None Include="Styles\Telco360Tables\.git\logs\HEAD" />
+    <None Include="Styles\Telco360Tables\.git\logs\refs\heads\main" />
+    <None Include="Styles\Telco360Tables\.git\logs\refs\remotes\origin\HEAD" />
+    <None Include="Styles\Telco360Tables\.git\objects\pack\pack-ac0ae2231cce342b3d4101ce956777fcc31433fe.idx" />
+    <None Include="Styles\Telco360Tables\.git\objects\pack\pack-ac0ae2231cce342b3d4101ce956777fcc31433fe.pack" />
+    <None Include="Styles\Telco360Tables\.git\objects\pack\pack-ac0ae2231cce342b3d4101ce956777fcc31433fe.rev" />
+    <None Include="Styles\Telco360Tables\.git\packed-refs" />
+    <None Include="Styles\Telco360Tables\.git\refs\heads\main" />
+    <None Include="Styles\Telco360Tables\.git\refs\remotes\origin\HEAD" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Styles\Telco360Forms\.git\objects\info\" />
+    <Folder Include="Styles\Telco360Forms\.git\refs\tags\" />
+    <Folder Include="Styles\Telco360Styles\.git\objects\info\" />
+    <Folder Include="Styles\Telco360Styles\.git\refs\tags\" />
+    <Folder Include="Styles\Telco360Tables\.git\objects\info\" />
+    <Folder Include="Styles\Telco360Tables\.git\refs\tags\" />
   </ItemGroup>
 
 </Project>

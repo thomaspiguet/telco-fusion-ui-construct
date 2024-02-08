@@ -1,0 +1,63 @@
+﻿// On s'assure que toutes les variables soient initialisees.  Si elles ont ete initialisees avant, les valeurs precedentes prevalent.
+$black: black !default;
+$white: white !default;
+$primary: #3cb4e7 !default;
+$gray-base: #3c4b64 !default;
+$secondary: #3c4b64 !default;
+$danger: #f86c6b !default;
+$success: #4dbd74 !default;
+$caution: yellow !default; // Ne fait pas partie du kit de couleur CoreUI.
+$warning: #ffc107 !default;
+$info: #63c2de !default;
+$brand: #63c2de !default;
+
+
+// On recalcule les gris a partir de gray-base pour surcharger la definition de gris codes en dur de CoreUI
+$gray-100: lighten($gray-base, 92%) !default; // CoreUI : #ebedef !default;
+$gray-125: lighten($gray-base, 90%) !default; // Custom color
+$gray-150: lighten($gray-base, 88%) !default; // CoreUI : #d8dbe0 !default;
+$gray-200: lighten($gray-base, 84.8%) !default; // CoreUI : #d8dbe0 !default;
+$gray-300: lighten($gray-base, 77%) !default; // CoreUI : #c4c9d0 !default;
+$gray-400: lighten($gray-base, 69.5%) !default; // CoreUI : #b1b7c1 !default;
+$gray-500: lighten($gray-base, 61.5%) !default; // CoreUI : #9da5b1 !default;
+$gray-600: lighten($gray-base, 54%) !default; // CoreUI : #8a93a2 !default;
+$gray-700: lighten($gray-base, 46.1%) !default; // CoreUI : #768192 !default;
+$gray-800: lighten($gray-base, 39%) !default; // CoreUI : #636f83 !default;
+$gray-900: lighten($gray-base, 31%) !default; // CoreUI : #4f5d73 !default;
+
+// On recalcule les gradients pour eviter les couleurs codees en dur de CoreUI
+$primary-gradient: ( "start": $primary, "stop": darken($primary, 19%) ) !default; // Start is $primary, stop is darken($primary, 19%) // CoreUI start #321fdb, stop #1f1498
+$secondary-gradient: ( "start": lighten($primary, 37.5%), "stop": $white ) !default; // Start is lighten($primary, 37.5%), stop is lighten($primary, 70%) // CoreUI start #c8d2dc, stop $white
+$light-gradient: ( "start": lighten($primary, 44%), "stop": $white ) !default; // Start is lighten($primary, 44%), stop is lighten($primary, 70%) // CoreUI start #e3e8ed, "stop": $white
+$dark-gradient: ( "start": $secondary, "stop": darken($secondary, 70%) ) !default; // Start is $secondary, stop is darken($secondary, 70%) // CoreUI start #3c4b64, "stop": #212333
+$danger-gradient: ( "start": $danger, "stop": darken($danger, 53%) ) !default; // Start is $danger, stop is darken($danger, 53%) // CoreUI start #e55353, "stop": #d93737
+$warning-gradient: ( "start": $warning, "stop": darken($warning, 4%) ) !default; // Start is $warning, stop is darken($warning, 4%) // CoreUI start #f9b115, "stop": #f6960b
+$success-gradient: ( "start": $success, "stop": darken($success, 19%) ) !default; // Start is $success, stop is darken($success, 19%) // CoreUI start #2eb85c, "stop": #1b9e3e
+$info-gradient: ( "start": $info, "stop": darken($info, 2%) ) !default; // Start is $info, stop is darken($info, 2%) // CoreUI start #39f, "stop": #2982cc
+
+// On redefinit les variables suivantes pour surcharger les valeurs codees en dur de CoreUI
+$progress-bar-bg: $primary !default;
+$sidebar-dark-minimizer-hover-bg: rgba($black, .3) !default;
+$sidebar-dark-minimizer-hover-bg__lt: rgba($black, .3) !default;
+$sidebar-dark-nav-dropdown-bg: rgba($black, .2) !default;
+$sidebar-dark-nav-dropdown-bg__lt: rgba($black, .2) !default;
+$sidebar-dark-nav-link-hover-bg: $primary !default;
+$sidebar-light-minimizer-bg: rgba($black, .05) !default;
+$sidebar-light-minimizer-bg__lt: rgba($black, .05) !default;
+$sidebar-light-minimizer-hover-bg: rgba($black, .1) !default;
+$sidebar-light-minimizer-hover-bg__lt: rgba($black, .1) !default;
+$sidebar-light-nav-dropdown-bg: rgba($black, .05) !default;
+$sidebar-light-nav-dropdown-bg__lt: rgba($black, .05) !default;
+$sidebar-light-nav-link-hover-bg: $primary !default;
+$sidebar-minimizer-hover-bg__dt: rgba($black, .3) !default;
+$sidebar-nav-dropdown-bg__dt: rgba($black, .2) !default;
+$text-disabled__dt: rgba($white, .38) !default;
+$text-high-emphasis__dt: rgba($white, .87) !default;
+$text-medium-emphasis__dt: rgba($white, .6) !default;
+$yiq-text-light__dt: rgba($black, .87) !default;
+
+// On définit des variables qui sont propres à Telco360
+// TODO 20220720 PM - Valider ces couleurs.
+$tableGroup: #3cb4e70f !default;
+$tableEven: #3cb4e717 !default;
+$tableOdd: #3cb4e730 !default;

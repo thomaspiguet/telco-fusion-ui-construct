@@ -1,0 +1,89 @@
+/*
+Fichier contenant les fonctions d'aide personalisées pour travailler avec des fichiers scss.
+*/
+
+///Indique si la variable contient une map.
+@function is-map($var){
+    @return type-of($var) == 'map';
+}
+
+///Effectue un override des propriété d'une map source avec celle d'une map d'override si la propriété est présente dans les deux.
+@function apply-theme-overrides($org-map : (), $overrides: $theme-overrides) {
+    @if(not is-map($org-map)){
+        @warn "org-map must be a map";
+    }
+
+    @if(not is-map($overrides)){
+        @warn "overrides must be a map";
+    }
+
+    $result: $org-map;
+
+    @each $key, $ovr in $overrides {
+        @if(map-has-key($map: $org-map, $key: $key)){
+            $tmp: map-get($map: $org-map, $key: $key);
+            @if(is-map($tmp)) {
+                $result: map-merge($result, ($key: apply-theme-overrides($tmp, $overrides: $ovr)));
+            }@else{
+                $result: map-merge($result, ($key: $ovr));
+            }
+        }
+    };
+
+    @return $result;
+};
+
+///Effectue un override des propriété d'une map source avec celle d'une map d'override si la propriété est présente dans les deux peu importe à quel profondeur ce trouve la propriété dans la map cible.
+@function apply-theme-overrides-everywhere($org-map : (), $overrides: $theme-overrides) {
+    @if(not is-map($org-map)){
+        @warn "org-map must be a map";
+    }
+
+    @if(not is-map($overrides)){
+        @warn "overrides must be a map";
+    }
+
+    $result: $org-map;
+
+    @each $key, $org in $org-map {
+        @if(is-map($org)) {
+            $result: map-merge($result, ($key: apply-theme-overrides-everywhere($org, $overrides)));
+        }@else{
+            @if($key != "default"){
+                @each $ovr-key, $ovr in $overrides{
+                    @if($key == $ovr-key){
+                        $result: map-merge($result, ($key: $ovr));
+                    }
+                }
+            }
+        }
+    };
+    
+    @return $result;
+};
+
+@function apply-theme-extensions-everywhere($org-map : (), $extensions: $theme-extensions) {
+    @if(not is-map($org-map)){
+        @warn "org-map must be a map";
+    }
+
+    @if(not is-map($extensions)){
+        @warn "extensions must be a map";
+    }
+
+    $result: $org-map;
+
+    @each $key, $org in $org-map {
+        @if(is-map($org)) {
+            $result: map-merge($result, ($key: apply-theme-extensions-everywhere($org, $extensions)));
+        }@else{
+            @if($key != "default"){
+                @each $ovr-key, $ovr in $extensions{
+                    $result: map-merge($result, ($ovr-key: $ovr));
+                }
+            }
+        }
+    };
+    
+    @return $result;
+};

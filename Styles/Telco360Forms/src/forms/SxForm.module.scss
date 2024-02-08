@@ -1,0 +1,66 @@
+$white: #fff !default;
+$primary: #3cb3e7 !default;
+$secondary: #e0f4ff !default;
+$above-secondary-color: black !default;
+
+$bg-color: $white !default;
+
+.scroll {
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+.sxForm-sticky-header{
+    position:sticky;
+    top:0px;
+    z-index:6; //Nous voulons que le header soit apr dessu le footer si les deux se chevauche.
+}
+
+.sxForm{
+    .card-footer{
+        padding:0.25rem;
+        background-color: inherit;
+    }
+}
+
+//Nous voulons des règles d'affichage différentes lorsque le form est dans un modal.
+.modal-content .modal-body {
+    .sxForm {
+        margin: 0px;
+    }
+
+    .sxForm-sticky-header {
+        padding: 0.25rem;
+        background-color: var(--bg-color, $bg-color);
+    }
+
+    .sxForm-sticky-footer {
+        padding: 0.25rem;
+        background-color: var(--bg-color, $bg-color);
+    }
+}
+
+.sxForm .sxForm-sticky-header {
+    background-color: var(--bg-color, $bg-color);
+}
+
+.sxForm-sticky-footer{
+    position:sticky;
+    bottom:0px;
+    z-index:5;
+}
+
+.sxForm-sticky-footer.card-footer {
+    background-color: var(--bg-color, $bg-color);
+}
+
+.card.primary {
+    .card-body {
+        background-color: var(--secondary, $secondary);
+        color: var(--above-secondary-color, $above-secondary-color);
+    }
+}
+
+.primary.form-group > .row {
+    background-color: var(--primary, $primary);
+}

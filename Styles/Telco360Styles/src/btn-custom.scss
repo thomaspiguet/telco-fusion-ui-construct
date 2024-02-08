@@ -1,0 +1,6 @@
+//Definition des couleurs
+$cleargrey: #d8d8d8 !default;
+
+.btn-secondary, .btn.enabled {
+    border-color: var(--clearGrey, $cleargrey);
+}
