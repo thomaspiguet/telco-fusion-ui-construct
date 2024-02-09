@@ -14,5 +14,25 @@
   {
     "outputFile": "Styles/Telco360Styles/src/btn-custom.css",
     "inputFile": "Styles/Telco360Styles/src/btn-custom.scss"
+  },
+  {
+    "outputFile": "Styles/Telco360Styles/src/custom.css",
+    "inputFile": "Styles/Telco360Styles/src/custom.scss"
+  },
+  {
+    "outputFile": "Styles/Telco360Styles/src/helpers.css",
+    "inputFile": "Styles/Telco360Styles/src/helpers.scss"
+  },
+  {
+    "outputFile": "Styles/Telco360Styles/src/themeCalc.css",
+    "inputFile": "Styles/Telco360Styles/src/themeCalc.scss"
+  },
+  {
+    "outputFile": "Styles/Telco360Styles/src/bootstrapExtensions.css",
+    "inputFile": "Styles/Telco360Styles/src/bootstrapExtensions.scss"
+  },
+  {
+    "outputFile": "wwwroot/css/tabler-icons.css",
+    "inputFile": "Styles/Telco360Styles/src/tabler-icons/webfont/tabler-icons.scss"
   }
 ]

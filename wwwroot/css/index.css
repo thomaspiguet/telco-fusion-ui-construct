@@ -1,13 +1,30 @@
-﻿/*@import './themeCalc.scss';
-*/
-@font-face {
+﻿@font-face {
   font-family: "barlow";
   src: url(../../Styles/Telco360Styles/assets/font/Barlow-Regular.ttf) format("truetype");
 }
-/*@import "./helpers.scss";
+@font-face {
+  font-family: "tabler-icons";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../Styles/Telco360Styles/src/fonts/tabler-icons.eot?v2.45.0");
+  src: url("../../Styles/Telco360Styles/src/fonts/tabler-icons.eot?#iefix-v2.45.0") format("embedded-opentype"), url("../../Styles/Telco360Styles/src/fonts/tabler-icons.woff2?v2.45.0") format("woff2"), url("../../Styles/Telco360Styles/src/fonts/tabler-icons.woff") format("woff"), url("../../Styles/Telco360Styles/src/fonts/tabler-icons.ttf?v2.45.0") format("truetype");
+}
+.ti {
+  font-family: "tabler-icons" !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
-@import "./custom.scss";
-*/
+/*@import "./helpers.scss";*/
+/*
+@import "./custom.scss";*/
 /*@import "../node_modules/@coreui/coreui-pro/scss/coreui.scss";
 */
 /*@import "./btn-custom.scss";

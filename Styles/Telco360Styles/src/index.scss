@@ -40,8 +40,8 @@ $link-decoration: underline;
 $btn-disabled-opacity: 0.5; //L'opacité par défaut n'est pas approprié pour les boutons n'ayant pas un background (ex : icones qui sont des boutons)
 $use-live-themes: true !default; //Variable custom pour permettre des thèmes basé sur des variables CSS avec des changements de valeur au runtime.
 
-/*@import './themeCalc.scss';
-*/
+@import './themeCalc.scss';
+
 
 //Overrides de l'utilisation des couleurs.
 //Attention, fonctionner ainsi va briser les fonctionnalités de variants et de thèmes standard de coreui...
@@ -100,10 +100,34 @@ $theme-extensions: () !default;
 
 $font-family-sans-serif: barlow, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
-/*@import "./helpers.scss";
 
-@import "./custom.scss";
-*/
+@font-face {
+    font-family: "tabler-icons";
+    font-style: normal;
+    font-weight: 400;
+    src: url("fonts/tabler-icons.eot?v2.45.0");
+    src: url("fonts/tabler-icons.eot?#iefix-v2.45.0") format("embedded-opentype"), url("fonts/tabler-icons.woff2?v2.45.0") format("woff2"), url("fonts/tabler-icons.woff") format("woff"), url("fonts/tabler-icons.ttf?v2.45.0") format("truetype");
+}
+}
+
+.ti {
+    font-family: "tabler-icons" !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+/*@import "./helpers.scss";*/
+/*
+@import "./custom.scss";*/
+
 /*@import "../node_modules/@coreui/coreui-pro/scss/coreui.scss";
 */
 /*@import "./btn-custom.scss";
