@@ -7,10 +7,14 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Styles\**" />
-    <Content Remove="Styles\**" />
-    <EmbeddedResource Remove="Styles\**" />
-    <None Remove="Styles\**" />
+    <Compile Remove="Styles\Telco360Forms\**" />
+    <Compile Remove="Styles\Telco360Tables\**" />
+    <Content Remove="Styles\Telco360Forms\**" />
+    <Content Remove="Styles\Telco360Tables\**" />
+    <EmbeddedResource Remove="Styles\Telco360Forms\**" />
+    <EmbeddedResource Remove="Styles\Telco360Tables\**" />
+    <None Remove="Styles\Telco360Forms\**" />
+    <None Remove="Styles\Telco360Tables\**" />
   </ItemGroup>
 
   <ItemGroup>
