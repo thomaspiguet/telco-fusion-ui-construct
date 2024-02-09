@@ -2,7 +2,8 @@
     Point d'entré des fichiers scss copiés au moment du packaging, utilisé uniqument par les applications utilisants la librarie.
     Ce fichier doit regrouper tout les imports des fichiers scss en les considérant tous comme étant dans le même répertoire.
 */
-@import './SxDualTables.module.scss';
+/*@import './SxDualTables.module.scss';
 @import './SxPaginatorCustom.module.scss';
 @import './SxParentChildLists.module.scss';
-@import './SxTable.module.scss';
+@import './SxTable.module.scss';*/
+@import "../../../telco360styles/src/btn-custom";

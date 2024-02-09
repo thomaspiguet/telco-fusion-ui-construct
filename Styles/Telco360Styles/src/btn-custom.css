@@ -1,0 +1,3 @@
+﻿.btn-secondary, .btn.enabled {
+  border-color: var(--clearGrey, #d8d8d8);
+}

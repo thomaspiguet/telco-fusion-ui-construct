@@ -40,8 +40,8 @@ $link-decoration: underline;
 $btn-disabled-opacity: 0.5; //L'opacité par défaut n'est pas approprié pour les boutons n'ayant pas un background (ex : icones qui sont des boutons)
 $use-live-themes: true !default; //Variable custom pour permettre des thèmes basé sur des variables CSS avec des changements de valeur au runtime.
 
-@import './themeCalc.scss';
-
+/*@import './themeCalc.scss';
+*/
 
 //Overrides de l'utilisation des couleurs.
 //Attention, fonctionner ainsi va briser les fonctionnalités de variants et de thèmes standard de coreui...
@@ -100,17 +100,17 @@ $theme-extensions: () !default;
 
 $font-family-sans-serif: barlow, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
-@import "./helpers.scss";
+/*@import "./helpers.scss";
 
 @import "./custom.scss";
-
+*/
 /*@import "../node_modules/@coreui/coreui-pro/scss/coreui.scss";
 */
-@import "./btn-custom.scss";
+/*@import "./btn-custom.scss";
 
 @import "./bootstrapExtensions.scss";
 
-@import "./fontAwesome/css/all.min.scss";
+@import "./fontAwesome/css/all.min.scss";*/
 
 :root {
 //Définition des couleurs

@@ -1,14 +1,18 @@
 ﻿[
   {
-    "outputFile": "Styles/Telco360Styles/src/index.css",
+    "outputFile": "wwwroot/css/index.css",
     "inputFile": "Styles/Telco360Styles/src/index.scss"
   },
   {
-    "outputFile": "Styles/Telco360Tables/src/scss/index.css",
+    "outputFile": "wwwroot/css/index.css",
     "inputFile": "Styles/Telco360Tables/src/scss/index.scss"
   },
   {
     "outputFile": "Styles/Telco360Tables/src/tables/SxTable.module.css",
     "inputFile": "Styles/Telco360Tables/src/tables/SxTable.module.scss"
+  },
+  {
+    "outputFile": "Styles/Telco360Styles/src/btn-custom.css",
+    "inputFile": "Styles/Telco360Styles/src/btn-custom.scss"
   }
 ]
