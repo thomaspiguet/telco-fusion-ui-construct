@@ -1,0 +1,57 @@
+﻿.sxTable {
+  table-layout: fixed;
+  width: 100%;
+}
+
+.sxTable > tbody > tr:hover,
+.sxTable.striped > tbody > tr:nth-of-type(even):hover,
+.sxTable.striped > tbody > tr:nth-of-type(odd):hover {
+  background-color: var(--secondary, blue);
+  color: var(--above-secondary-color, black);
+}
+.sxTable > tbody > tr:hover a,
+.sxTable.striped > tbody > tr:nth-of-type(even):hover a,
+.sxTable.striped > tbody > tr:nth-of-type(odd):hover a {
+  color: var(--above-secondary-color, black);
+}
+
+.sxtable-row-expended {
+  border-width: 4px;
+  border: dashed;
+}
+
+.sxTable.striped > tbody > tr:nth-of-type(even) {
+  background-color: var(--bg-color, white);
+}
+
+.sxTable.striped > tbody > tr:nth-of-type(odd) {
+  background-color: #f9f9f9;
+}
+
+.row-dirty {
+  font-weight: bold;
+}
+
+.row-disabled {
+  background-color: white;
+}
+
+.card .bgControls.card-header {
+  background-color: inherit;
+}
+
+.sxTable-summary {
+  background-color: var(--secondary, blue);
+  color: var(--above-secondary-color, black);
+}
+
+.sxTable-maxLines {
+  display: -webkit-box;
+  -webkit-line-clamp: var(--maxLines);
+  -webkit-box-orient: vertical;
+}
+
+.resizableColumn {
+  resize: horizontal;
+  overflow-x: auto;
+}

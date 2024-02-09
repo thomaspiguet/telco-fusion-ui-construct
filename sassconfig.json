@@ -1,0 +1,10 @@
+[
+  {
+    "outputFile": "Styles/Telco360Styles/src/index.css",
+    "inputFile": "Styles/Telco360Styles/src/index.scss"
+  },
+  {
+    "outputFile": "Styles/Telco360Tables/src/scss/index.css",
+    "inputFile": "Styles/Telco360Tables/src/scss/index.scss"
+  }
+]

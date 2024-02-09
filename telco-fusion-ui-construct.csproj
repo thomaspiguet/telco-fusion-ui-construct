@@ -7,26 +7,24 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Styles\Telco360Forms\.git\**" />
-    <Compile Remove="Styles\Telco360Forms\.vscode\**" />
-    <Compile Remove="Styles\Telco360Styles\.git\**" />
-    <Compile Remove="Styles\Telco360Tables\.git\**" />
-    <Compile Remove="Styles\Telco360Tables\.vscode\**" />
-    <Content Remove="Styles\Telco360Forms\.git\**" />
-    <Content Remove="Styles\Telco360Forms\.vscode\**" />
-    <Content Remove="Styles\Telco360Styles\.git\**" />
-    <Content Remove="Styles\Telco360Tables\.git\**" />
-    <Content Remove="Styles\Telco360Tables\.vscode\**" />
-    <EmbeddedResource Remove="Styles\Telco360Forms\.git\**" />
-    <EmbeddedResource Remove="Styles\Telco360Forms\.vscode\**" />
-    <EmbeddedResource Remove="Styles\Telco360Styles\.git\**" />
-    <EmbeddedResource Remove="Styles\Telco360Tables\.git\**" />
-    <EmbeddedResource Remove="Styles\Telco360Tables\.vscode\**" />
-    <None Remove="Styles\Telco360Forms\.git\**" />
-    <None Remove="Styles\Telco360Forms\.vscode\**" />
-    <None Remove="Styles\Telco360Styles\.git\**" />
-    <None Remove="Styles\Telco360Tables\.git\**" />
-    <None Remove="Styles\Telco360Tables\.vscode\**" />
+    <Compile Remove="Styles\**" />
+    <Content Remove="Styles\**" />
+    <EmbeddedResource Remove="Styles\**" />
+    <None Remove="Styles\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="compilerconfig.json" />
+    <Content Remove="sassconfig.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="compilerconfig.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="compilerconfig.json" />
+    <None Include="sassconfig.json" />
   </ItemGroup>
 
   <ItemGroup>

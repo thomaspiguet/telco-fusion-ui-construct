@@ -1,0 +1,184 @@
+﻿@page "/auditlist"
+@inject HttpClient Http
+
+<PageTitle>AuditList</PageTitle>
+
+<h1>Weather</h1>
+
+<p>This component demonstrates fetching data from the server.</p>
+
+@if (forecasts == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <p>Consultation des Audits - Telco 360</p>
+    <p>Service</p>
+    <p>Choisir... Telco360Api Telco360Authenticator Telco360Commands Telco360Configs Telco360Equipments Telco360i18n Telco360Images Telco360L10n Telco360Params Telco360Profiles Telco360Templates Telco360Timesheet Telco360Udls Telco360Warehouses</p>
+    <p>Regrouper les (Params) sous l'entité</p>
+    <p>Nom de table</p>
+    <p>Identifiant</p>
+    <p>Date du changement</p>
+    <p>Utilisateur</p>
+    <p>Nom de table</p>
+    <p>Choisir...</p>
+    <p>Identifiant</p>
+    <p>Mot entier uniquement</p>
+    <p>Sensible à la case</p>
+    <p>Exclure la valeur entrée</p>
+    <p>Uniquement les valeurs nulles</p>
+    <p>Date du changement</p>
+    <p>msg.operation</p>
+    <p>Choisir... Différent&nbsp;de Égal Inférieur&nbsp;à Inférieur&nbsp;ou&nbsp;égal&nbsp;à Supérieur&nbsp;à Supérieur&nbsp;ou&nbsp;égal&nbsp;à</p>
+    <p>Utilisateur</p>
+    <p>Mot entier uniquement</p>
+    <p>Sensible à la case</p>
+    <p>Exclure la valeur entrée</p>
+    <p>Uniquement les valeurs nulles</p>
+    <table>
+        <tr>
+            <th></th>
+            <th>
+                <p>Nom de table</p>
+            </th>
+            <th>
+                <p>Identifiant</p>
+            </th>
+            <th>
+                <p>Date du changement</p>
+            </th>
+            <th>
+                <p>Utilisateur</p>
+            </th>
+        </tr>
+        <tbody>
+            <tr>
+                <td></td>
+                <td>
+                    <p>EndpointSecurities</p>
+                </td>
+                <td>
+                    <p>4</p>
+                </td>
+                <td>
+                    <p>2024-02-05 16:05:28</p>
+                </td>
+                <td>
+                    <p>Thomas PIGUET</p>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <p>EndpointSecurities</p>
+                </td>
+                <td>
+                    <p>3</p>
+                </td>
+                <td>
+                    <p>2024-02-05 16:05:28</p>
+                </td>
+                <td>
+                    <p>Thomas PIGUET</p>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <p>EndpointSecurities</p>
+                </td>
+                <td>
+                    <p>2</p>
+                </td>
+                <td>
+                    <p>2024-02-05 16:05:28</p>
+                </td>
+                <td>
+                    <p>Thomas PIGUET</p>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <p>EndpointSecurities</p>
+                </td>
+                <td>
+                    <p>1</p>
+                </td>
+                <td>
+                    <p>2024-02-05 16:05:28</p>
+                </td>
+                <td>
+                    <p>Thomas PIGUET</p>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="5">
+                    <table>
+                        <tr>
+                            <th>
+                                <p>Nom du champ</p>
+                            </th>
+                            <th>
+                                <p>Valeur précédente</p>
+                            </th>
+                            <th>
+                                <p>Nouvelle valeur</p>
+                            </th>
+                        </tr>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <p>Action</p>
+                                </td>
+                                <td></td>
+                                <td>
+                                    <p>GET</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>AllowedRights</p>
+                                </td>
+                                <td></td>
+                                <td>
+                                    <p>Gérer la sécurité</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <p>Uri</p>
+                                </td>
+                                <td></td>
+                                <td>
+                                    <p>EndpointSecurity</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+}
+
+@code {
+    private WeatherForecast[]? forecasts;
+
+    protected override async Task OnInitializedAsync()
+    {
+        forecasts = await Http.GetFromJsonAsync<WeatherForecast[]>("sample-data/weather.json");
+    }
+
+    public class WeatherForecast
+    {
+        public DateOnly Date { get; set; }
+
+        public int TemperatureC { get; set; }
+
+        public string? Summary { get; set; }
+
+        public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
+    }
+}
