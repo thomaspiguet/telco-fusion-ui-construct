@@ -1,5 +1,6 @@
 ﻿// On s'assure que toutes les variables soient initialisees.  Si elles ont ete initialisees avant, les valeurs precedentes prevalent.
-$black: black !default;
+/*$black: black !default;*/
+$black: red !default;
 $white: white !default;
 $primary: #3cb4e7 !default;
 $gray-base: #3c4b64 !default;

@@ -1,0 +1,42 @@
+﻿.float-grids {
+  display: block;
+}
+
+.float-grids .grid-element {
+  float: left;
+  max-width: 46%;
+}
+
+.float-grids .buttons {
+  float: left;
+  margin-top: 10%;
+  margin-left: 2%;
+  margin-right: 2%;
+  width: 4%;
+}
+
+@media screen and (max-width: 1050px) {
+  .main .form-horizontal .container-fluid {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .form-horizontal > .container-fluid > .float-grids > .grid-element {
+    max-width: 100%;
+  }
+  .form-horizontal > .container-fluid > .float-grids > .buttons {
+    display: flex;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100%;
+  }
+  .form-horizontal > .container-fluid > .float-grids > .buttons > div {
+    width: 48%;
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+  .form-horizontal > .container-fluid > .float-grids > .buttons > div > .btn > b {
+    writing-mode: vertical-lr;
+  }
+}

@@ -1,7 +1,7 @@
-$black: #051821 !default;
+/*$black: #051821 !default;
 $primary: #3cb3e7 !default;
-$secondary: #ade2ff !default;
-
+$secondary: #ade2ff !default;*/
+@import 'index.scss';
 
 .background-dark {
     background-color: $black; //Ceci est une exception pour l'utilisation des couleurs puisqu'il doit être noir peu importe le thème.

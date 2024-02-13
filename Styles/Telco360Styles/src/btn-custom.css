@@ -1,3 +1,156 @@
-﻿.btn-secondary, .btn.enabled {
-  border-color: var(--clearGrey, #d8d8d8);
+﻿/*$cleargrey: #d8d8d8 !default;*/
+/*$primary: #3cb3e7 !default; */
+/*$black: black !default;*/
+@font-face {
+  font-family: "barlow";
+  src: url(../assets/font/Barlow-Regular.ttf) format("truetype");
 }
+@font-face {
+  font-family: "tabler-icons";
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/tabler-icons.eot?v2.45.0");
+  src: url("fonts/tabler-icons.eot?#iefix-v2.45.0") format("embedded-opentype"), url("fonts/tabler-icons.woff2?v2.45.0") format("woff2"), url("fonts/tabler-icons.woff") format("woff"), url("fonts/tabler-icons.ttf?v2.45.0") format("truetype");
+}
+.ti {
+  font-family: "tabler-icons" !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/*@import "./helpers.scss";*/
+/*
+@import "./custom.scss";*/
+/*@import "../node_modules/@coreui/coreui-pro/scss/coreui.scss";
+*/
+/*@import "./btn-custom.scss";
+
+@import "./bootstrapExtensions.scss";
+
+@import "./fontAwesome/css/all.min.scss";*/
+:root {
+  --above-danger-color: #fff;
+  --above-primary-color: #fff;
+  --above-secondary-color: #051821;
+  --above-success-color: #fff;
+  --above-warning-color: #051821;
+  --bg-elevation-0: #181924;
+  --black: #051821;
+  --danger: #BA5150;
+  --gray-base: #000;
+  --info: #63c2de;
+  --mark-bg: #fcf8e3;
+  --pink: #e83e8c;
+  --primary: #3cb3e7;
+  --secondary: #e0f4ff;
+  --secondary-25: #e0f4ff;
+  --success: #3D975C;
+  --caution: #eaea00;
+  --warning: #ffc107;
+  --white: #fff;
+  --light: #ebebeb;
+  --dark: #636363;
+}
+
+/*$black: #051821 !default;
+$primary: #3cb3e7 !default;
+$secondary: #ade2ff !default;*/
+/*$primary: #3cb3e7 !default; */
+/*$black: black !default;*/
+@font-face {
+  font-family: "barlow";
+  src: url(../assets/font/Barlow-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "tabler-icons";
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/tabler-icons.eot?v2.45.0");
+  src: url("fonts/tabler-icons.eot?#iefix-v2.45.0") format("embedded-opentype"), url("fonts/tabler-icons.woff2?v2.45.0") format("woff2"), url("fonts/tabler-icons.woff") format("woff"), url("fonts/tabler-icons.ttf?v2.45.0") format("truetype");
+}
+.ti {
+  font-family: "tabler-icons" !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/*@import "./helpers.scss";*/
+/*
+@import "./custom.scss";*/
+/*@import "../node_modules/@coreui/coreui-pro/scss/coreui.scss";
+*/
+/*@import "./btn-custom.scss";
+
+@import "./bootstrapExtensions.scss";
+
+@import "./fontAwesome/css/all.min.scss";*/
+:root {
+  --above-danger-color: #fff;
+  --above-primary-color: #fff;
+  --above-secondary-color: #051821;
+  --above-success-color: #fff;
+  --above-warning-color: #051821;
+  --bg-elevation-0: #181924;
+  --black: #051821;
+  --danger: #BA5150;
+  --gray-base: #000;
+  --info: #63c2de;
+  --mark-bg: #fcf8e3;
+  --pink: #e83e8c;
+  --primary: #3cb3e7;
+  --secondary: #e0f4ff;
+  --secondary-25: #e0f4ff;
+  --success: #3D975C;
+  --caution: #eaea00;
+  --warning: #ffc107;
+  --white: #fff;
+  --light: #ebebeb;
+  --dark: #636363;
+}
+
+.background-dark {
+  background-color: #051821;
+}
+
+.btn.disabled, .btn:disabled {
+  cursor: default;
+}
+
+.d-contents {
+  display: contents !important;
+}
+
+.opacity-100 {
+  opacity: 1 !important;
+}
+
+.text-decoration-underline {
+  text-decoration: underline !important;
+}
+
+a {
+  font-weight: bold;
+}
+
+input {
+  accent-color: var(--primary, #004CC2);
+}
+
+/*$black: black !default;*/
+/*.btn-secondary, .btn.enabled {
+    border-color: var(--clearGrey, $cleargrey);
+}*/

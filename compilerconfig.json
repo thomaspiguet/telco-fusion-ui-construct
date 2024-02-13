@@ -1,38 +1,80 @@
-﻿[
+[
   {
     "outputFile": "wwwroot/css/index.css",
-    "inputFile": "Styles/Telco360Styles/src/index.scss"
+    "inputFile": "Styles/Telco360Styles/src/index.scss",
+    "sourceMap": false,
+    "useNodeSass": false
   },
   {
     "outputFile": "wwwroot/css/index.css",
-    "inputFile": "Styles/Telco360Tables/src/scss/index.scss"
+    "inputFile": "Styles/Telco360Tables/src/scss/index.scss",
+    "sourceMap": false,
+    "useNodeSass": false
   },
   {
     "outputFile": "Styles/Telco360Tables/src/tables/SxTable.module.css",
-    "inputFile": "Styles/Telco360Tables/src/tables/SxTable.module.scss"
+    "inputFile": "Styles/Telco360Tables/src/tables/SxTable.module.scss",
+    "sourceMap": false,
+    "useNodeSass": false
   },
   {
     "outputFile": "Styles/Telco360Styles/src/btn-custom.css",
-    "inputFile": "Styles/Telco360Styles/src/btn-custom.scss"
+    "inputFile": "Styles/Telco360Styles/src/btn-custom.scss",
+    "sourceMap": false,
+    "useNodeSass": false
   },
   {
     "outputFile": "Styles/Telco360Styles/src/custom.css",
-    "inputFile": "Styles/Telco360Styles/src/custom.scss"
+    "inputFile": "Styles/Telco360Styles/src/custom.scss",
+    "sourceMap": false,
+    "useNodeSass": false
   },
   {
     "outputFile": "Styles/Telco360Styles/src/helpers.css",
-    "inputFile": "Styles/Telco360Styles/src/helpers.scss"
+    "inputFile": "Styles/Telco360Styles/src/helpers.scss",
+    "sourceMap": false,
+    "useNodeSass": false
   },
   {
     "outputFile": "Styles/Telco360Styles/src/themeCalc.css",
-    "inputFile": "Styles/Telco360Styles/src/themeCalc.scss"
-  },
-  {
-    "outputFile": "Styles/Telco360Styles/src/bootstrapExtensions.css",
-    "inputFile": "Styles/Telco360Styles/src/bootstrapExtensions.scss"
+    "inputFile": "Styles/Telco360Styles/src/themeCalc.scss",
+    "sourceMap": false,
+    "useNodeSass": false
   },
   {
     "outputFile": "wwwroot/css/tabler-icons.css",
-    "inputFile": "Styles/Telco360Styles/src/tabler-icons/webfont/tabler-icons.scss"
+    "inputFile": "Styles/Telco360Styles/src/tabler-icons/webfont/tabler-icons.scss",
+    "sourceMap": false,
+    "useNodeSass": false
+  },
+  {
+    "outputFile": "Styles/Telco360Styles/src/fontAwesome/css/all.min.css",
+    "inputFile": "Styles/Telco360Styles/src/fontAwesome/css/all.min.scss",
+    "sourceMap": false,
+    "useNodeSass": false
+  },
+  {
+    "outputFile": "Styles/Telco360Tables/src/tables/utils/SxPaginatorCustom.module.css",
+    "inputFile": "Styles/Telco360Tables/src/tables/utils/SxPaginatorCustom.module.scss",
+    "sourceMap": false,
+    "useNodeSass": false
+  },
+  {
+    "outputFile": "Styles/Telco360Tables/src/tables/SxDualTables.module.css",
+    "inputFile": "Styles/Telco360Tables/src/tables/SxDualTables.module.scss",
+    "sourceMap": false,
+    "useNodeSass": false
+  },
+  {
+    "outputFile": "Styles/Telco360Tables/src/tables/SxParentChildLists.module.css",
+    "inputFile": "Styles/Telco360Tables/src/tables/SxParentChildLists.module.scss",
+    "sourceMap": false,
+    "useNodeSass": false
+  },
+  {
+    "outputFile": "wwwroot/css/indextables.css",
+    "inputFile": "Styles/Telco360Tables/src/scss/indextables.scss",
+    "sourceMap": true,
+    "useNodeSass": false
   }
 ]

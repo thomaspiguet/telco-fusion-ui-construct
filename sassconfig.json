@@ -6,5 +6,9 @@
   {
     "outputFile": "Styles/Telco360Tables/src/scss/index.css",
     "inputFile": "Styles/Telco360Tables/src/scss/index.scss"
+  },
+  {
+    "outputFile": "Styles/Telco360Styles/src/bootstrapExtensions.css",
+    "inputFile": "Styles/Telco360Styles/src/bootstrapExtensions.scss"
   }
 ]

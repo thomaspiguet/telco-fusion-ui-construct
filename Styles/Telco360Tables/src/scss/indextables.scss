@@ -1,4 +1,3 @@
-﻿@charset "UTF-8";
 /*
     Point d'entré des fichiers scss copiés au moment du packaging, utilisé uniqument par les applications utilisants la librarie.
     Ce fichier doit regrouper tout les imports des fichiers scss en les considérant tous comme étant dans le même répertoire.
@@ -7,6 +6,6 @@
 @import './SxPaginatorCustom.module.scss';
 @import './SxParentChildLists.module.scss';
 @import './SxTable.module.scss';*/
-/*@import "../../../telco360styles/src/themecalc";
+@import "../../../telco360styles/src/themecalc";
 @import "../../../telco360styles/src/btn-custom";
-@import "../../../telco360styles/src/tabler-icons/webfont/tabler-icons";*/
+@import "../../../telco360styles/src/tabler-icons/webfont/tabler-icons";

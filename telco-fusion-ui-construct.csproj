@@ -8,22 +8,14 @@
 
   <ItemGroup>
     <Compile Remove="Styles\Telco360Forms\**" />
-    <Compile Remove="Styles\Telco360Tables\**" />
     <Content Remove="Styles\Telco360Forms\**" />
-    <Content Remove="Styles\Telco360Tables\**" />
     <EmbeddedResource Remove="Styles\Telco360Forms\**" />
-    <EmbeddedResource Remove="Styles\Telco360Tables\**" />
     <None Remove="Styles\Telco360Forms\**" />
-    <None Remove="Styles\Telco360Tables\**" />
   </ItemGroup>
 
   <ItemGroup>
     <Content Remove="compilerconfig.json" />
     <Content Remove="sassconfig.json" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Remove="Styles\Telco360Styles\src\bootstrapExtensions.scss" />
   </ItemGroup>
 
   <ItemGroup>

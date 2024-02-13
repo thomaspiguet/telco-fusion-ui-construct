@@ -1,6 +1,7 @@
 //Definition des couleurs
-$cleargrey: #d8d8d8 !default;
+/*$cleargrey: #d8d8d8 !default;*/
+@import 'index.scss', 'custom.scss', 'themeCalc.scss';
 
-.btn-secondary, .btn.enabled {
+/*.btn-secondary, .btn.enabled {
     border-color: var(--clearGrey, $cleargrey);
-}
+}*/

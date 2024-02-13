@@ -6,7 +6,8 @@ $gray-base: #000 !default; // CoreUI: #3c4b64
 $info: #63c2de !default; // CoreUI : #39f
 $mark-bg: #fcf8e3 !default; // CoreUI : #fcf8e3
 $pink: #e83e8c !default; // CoreUI : #e83e8c
-$primary: #3cb3e7 !default; // CoreUI : #321fdb
+$primary: #004CC2 !default; // CoreUI : #321fdb
+/*$primary: #3cb3e7 !default; */
 $secondary: #e0f4ff !default; // CoreUI : #3c4b64
 $secondary-25: #e0f4ff !default; // CoreUI: #ced2d8
 $success: #3D975C !default; // CoreUI : #2eb85c
@@ -108,7 +109,7 @@ $font-family-sans-serif: barlow, -apple-system, BlinkMacSystemFont, "Segoe UI", 
     src: url("fonts/tabler-icons.eot?v2.45.0");
     src: url("fonts/tabler-icons.eot?#iefix-v2.45.0") format("embedded-opentype"), url("fonts/tabler-icons.woff2?v2.45.0") format("woff2"), url("fonts/tabler-icons.woff") format("woff"), url("fonts/tabler-icons.ttf?v2.45.0") format("truetype");
 }
-}
+ 
 
 .ti {
     font-family: "tabler-icons" !important;

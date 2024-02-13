@@ -7,12 +7,7 @@
 
 <p>This component demonstrates fetching data from the server.</p>
 
-@if (forecasts == null)
-{
-    <p><em>Loading...</em></p>
-}
-else
-{
+
     <p>Consultation des Audits - Telco 360</p>
     <p>Service</p>
     <p>Choisir... Telco360Api Telco360Authenticator Telco360Commands Telco360Configs Telco360Equipments Telco360i18n Telco360Images Telco360L10n Telco360Params Telco360Profiles Telco360Templates Telco360Timesheet Telco360Udls Telco360Warehouses</p>
@@ -48,132 +43,22 @@ else
     </div>
 
 
-    <table>
-        <tr>
-            <th></th>
-            <th>
-                <p>Nom de table</p>
-            </th>
-            <th>
-                <p>Identifiant</p>
-            </th>
-            <th>
-                <p>Date du changement</p>
-            </th>
-            <th>
-                <p>Utilisateur</p>
-            </th>
-        </tr>
-        <tbody>
-            <tr>
-                <td></td>
-                <td>
-                    <p>EndpointSecurities</p>
-                </td>
-                <td>
-                    <p>4</p>
-                </td>
-                <td>
-                    <p>2024-02-05 16:05:28</p>
-                </td>
-                <td>
-                    <p>Thomas PIGUET</p>
-                </td>
-            </tr>
-            <tr>
-                <td></td>
-                <td>
-                    <p>EndpointSecurities</p>
-                </td>
-                <td>
-                    <p>3</p>
-                </td>
-                <td>
-                    <p>2024-02-05 16:05:28</p>
-                </td>
-                <td>
-                    <p>Thomas PIGUET</p>
-                </td>
-            </tr>
-            <tr>
-                <td></td>
-                <td>
-                    <p>EndpointSecurities</p>
-                </td>
-                <td>
-                    <p>2</p>
-                </td>
-                <td>
-                    <p>2024-02-05 16:05:28</p>
-                </td>
-                <td>
-                    <p>Thomas PIGUET</p>
-                </td>
-            </tr>
-            <tr>
-                <td></td>
-                <td>
-                    <p>EndpointSecurities</p>
-                </td>
-                <td>
-                    <p>1</p>
-                </td>
-                <td>
-                    <p>2024-02-05 16:05:28</p>
-                </td>
-                <td>
-                    <p>Thomas PIGUET</p>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="5">
-                    <table>
-                        <tr>
-                            <th>
-                                <p>Nom du champ</p>
-                            </th>
-                            <th>
-                                <p>Valeur précédente</p>
-                            </th>
-                            <th>
-                                <p>Nouvelle valeur</p>
-                            </th>
-                        </tr>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <p>Action</p>
-                                </td>
-                                <td></td>
-                                <td>
-                                    <p>GET</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p>AllowedRights</p>
-                                </td>
-                                <td></td>
-                                <td>
-                                    <p>Gérer la sécurité</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p>Uri</p>
-                                </td>
-                                <td></td>
-                                <td>
-                                    <p>EndpointSecurity</p>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-}
+<div class="border pl-1 pr-1 pb-1"><div class="row no-gutters">
+    <div class="col-6 my-auto font-weight-bold"></div>
+    
+    <div class="col-6 d-flex justify-content-end">
+        <div class="d-flex pt-2 px-2">
+            <label class="mx-2">Regrouper les (Params) sous l'entité</label>
+            <label class="c-switch form-check-label c-switch-label c-switch-primary">
+                <input class="c-switch-input c-form-check-input" type="checkbox">
+                <span class="c-switch-slider" data-checked="✓" data-unchecked="✕"></span></label></div><div class="" style="position: relative; display: inline;"><button aria-label="Filtrer" class="btn"><span class=" cis-filter Xs-nomargin-top c-icon c-icon-custom-size"></span></button></div><div class="" style="position: relative; display: inline;"><button aria-label="Exporter CSV" class="btn "><i class="fa fa-solid fa-file-csv fa-lg"></i></button></div><div class="btn-group"><div class="" style="position: relative; display: inline;"><button type="button" aria-haspopup="true" aria-expanded="false" class="btn btn-none" aria-label="Colonnes"><span class="cis-columns c-icon c-icon-custom-size"></span></button></div><div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu dropdown-menu-right"><div class="checkbox form-check"><input id="Nom de table" name="Nom de table" type="checkbox" class="form-check-input form-check-input" checked=""><label for="Nom de table" class="form-check-label form-check-label">Nom de table</label></div><div class="checkbox form-check"><input id="Identifiant" name="Identifiant" type="checkbox" class="form-check-input form-check-input" checked=""><label for="Identifiant" class="form-check-label form-check-label">Identifiant</label></div><div class="checkbox form-check"><input id="Date du changement" name="Date du changement" type="checkbox" class="form-check-input form-check-input" checked=""><label for="Date du changement" class="form-check-label form-check-label">Date du changement</label></div><div class="checkbox form-check"><input id="Utilisateur" name="Utilisateur" type="checkbox" class="form-check-input form-check-input" checked=""><label for="Utilisateur" class="form-check-label form-check-label">Utilisateur</label></div></div></div></div></div><div class="collapse"><div class="d-flex flex-wrap card-body"><div class="w-25 px-1"><label for="id-junk-ID-tableName" class="">Nom de table</label><div class="SxSelect SxSelectBlock SxSelectSearchable"><div class="input-group"><div class="SxSearchable w-100 dropdown"><button aria-haspopup="true" aria-expanded="false" id="SxSelectToggleundefined" type="button" class="w-100 text-left  p-1 btn btn-secondary"><div class="w-100 d-block white-space-pre">Choisir...<i class="cis-chevron-bottom-alt float-right"></i></div></button></div><div class="input-group-append"><button id="SxSelect-Tooltip-tableName" class="sxButton btn outline  fa fa-times form-control btn-outline-secondary" type="button"></button></div></div></div></div><div class="w-25 px-1"><div class=""><label for="id-junk-ID-recordId" class="">Identifiant</label></div><div class="d-flex "><div class="border-0 input-group"><input id="id-junk-ID-recordId" name="recordId" type="text" class="form-control" value=""><div class="input-group-append"><button class="sxButton btn form-control btn-secondary " type="button"><i class="cil-apps-settings"></i></button></div></div></div><div class="border d-none"><div class="d-100 p-1"><label>Mot entier uniquement</label><label class="c-switch form-check-label c-switch-label c-switch-primary float-right"><input class="c-switch-input c-form-check-input" type="checkbox"><span class="c-switch-slider" data-checked="✓" data-unchecked="✕"></span></label></div><div class="d-100 p-1"><label>Sensible à la case</label><label class="c-switch form-check-label c-switch-label c-switch-primary float-right"><input class="c-switch-input c-form-check-input" type="checkbox"><span class="c-switch-slider" data-checked="✓" data-unchecked="✕"></span></label></div><div class="d-100 p-1"><label>Exclure la valeur entrée</label><label class="c-switch form-check-label c-switch-label c-switch-primary float-right"><input class="c-switch-input c-form-check-input" type="checkbox"><span class="c-switch-slider" data-checked="✓" data-unchecked="✕"></span></label></div><div class="d-100 p-1"><label>Uniquement les valeurs nulles</label><label class="c-switch form-check-label c-switch-label c-switch-primary float-right"><input class="c-switch-input c-form-check-input" type="checkbox"><span class="c-switch-slider" data-checked="✓" data-unchecked="✕"></span></label></div></div></div><div class="w-25 px-1"><label for="id-junk-ID-actionDate" class="">Date du changement</label><br><div class="d-flex "><div class="border-0 input-group"><div class="row m-0 p-0"><div class="DayPickerInput"><input placeholder="YYYY-MM-DD" id="actionDate" name="actionDate" class="form-control undefined" value=""></div></div><div class="input-group-append"><button aria-label="button-change-mode" class="sxButton btn form-control btn-secondary" type="button"><i class="cil-external-link m-auto w-100"></i></button></div><div class="input-group-append"><button class="sxButton btn form-control btn-secondary " type="button"><i class="cil-apps-settings"></i></button></div></div></div><div class="border d-none"><div class="d-100 p-1"><label>msg.operation<div class="SxSelect SxSelectBlock"><select name="SxSelect_DatePickerFilterOptions" id="SxSelect_DatePickerFilterOptions" class="form-control"><option value="" class="d-none" disabled="">Choisir...</option><option value="0" class="">Différent&nbsp;de</option><option value="1" class="">Égal</option><option value="2" class="">Inférieur&nbsp;à</option><option value="3" class="">Inférieur&nbsp;ou&nbsp;égal&nbsp;à</option><option value="4" class="">Supérieur&nbsp;à</option><option value="5" class="">Supérieur&nbsp;ou&nbsp;égal&nbsp;à</option></select></div></label></div></div></div><div class="w-25 px-1"><div class=""><label for="id-junk-ID-userName" class="">Utilisateur</label></div><div class="d-flex "><div class="border-0 input-group"><input id="id-junk-ID-userName" name="userName" type="text" class="form-control" value=""><div class="input-group-append"><button class="sxButton btn form-control btn-secondary " type="button"><i class="cil-apps-settings"></i></button></div></div></div><div class="border d-none"><div class="d-100 p-1"><label>Mot entier uniquement</label><label class="c-switch form-check-label c-switch-label c-switch-primary float-right"><input class="c-switch-input c-form-check-input" type="checkbox"><span class="c-switch-slider" data-checked="✓" data-unchecked="✕"></span></label></div><div class="d-100 p-1"><label>Sensible à la case</label><label class="c-switch form-check-label c-switch-label c-switch-primary float-right"><input class="c-switch-input c-form-check-input" type="checkbox"><span class="c-switch-slider" data-checked="✓" data-unchecked="✕"></span></label></div><div class="d-100 p-1"><label>Exclure la valeur entrée</label><label class="c-switch form-check-label c-switch-label c-switch-primary float-right"><input class="c-switch-input c-form-check-input" type="checkbox"><span class="c-switch-slider" data-checked="✓" data-unchecked="✕"></span></label></div><div class="d-100 p-1"><label>Uniquement les valeurs nulles</label><label class="c-switch form-check-label c-switch-label c-switch-primary float-right"><input class="c-switch-input c-form-check-input" type="checkbox"><span class="c-switch-slider" data-checked="✓" data-unchecked="✕"></span></label></div></div></div><div class="w-100 d-flex"><div class=" ml-1"><div class="" style="position: relative; display: inline;"><button aria-label="Rechercher" class="btn"><span class="cis-check-circle c-icon c-icon-custom-size"></span></button></div></div><div class="ml-1"><div class="" style="position: relative; display: inline;"><button aria-label="Effacer" class="btn"><span class="cis-filter-x c-icon c-icon-custom-size"></span></button></div></div></div></div></div><table tabindex="0" class="table-bordered sxTable "><thead><tr class="card-header"><th style="width: 25px;"><div class="d-flex justify-content-center align-items-center w-100"><span class="mt-0 w-auto mr-1 cis-caret-right btn-sm c-icon c-icon-custom-size
+        icons font-sm"></span></div></th><th class=" "><div class="" style="position: relative; display: inline;"><div class="white-space-pre text-truncate   ml-1"><span aria-label="Trier" class="cis-swap-vertical btn float-right m-0 mr-1 p-0"></span>Nom de table</div></div></th><th class=" "><div class="" style="position: relative; display: inline;"><div class="white-space-pre text-truncate   ml-1"><span aria-label="Trier" class="cis-swap-vertical btn float-right m-0 mr-1 p-0"></span>Identifiant</div></div></th><th class=" "><div class="" style="position: relative; display: inline;"><div class="white-space-pre text-truncate   ml-1"><span aria-label="Trier" class="cis-swap-vertical btn float-right m-0 mr-1 p-0"></span>Date du changement</div></div></th><th class=" "><div class="" style="position: relative; display: inline;"><div class="white-space-pre text-truncate   ml-1"><span aria-label="Trier" class="cis-swap-vertical btn float-right m-0 mr-1 p-0"></span>Utilisateur</div></div></th></tr></thead><tbody><tr tabindex="0" class=""><td><div class="d-flex justify-content-center align-items-center w-100"><span class="mt-0 w-auto mr-1 cis-caret-right btn-sm c-icon c-icon-custom-size
+        icons font-sm"></span></div></td><td class="align-middle" aria-label="tableName"><div class="" style="position: relative; display: inline;"><div class="white-space-pre text-truncate   ml-1">EndpointSecurities</div></div></td><td class="align-middle" aria-label="recordId"><div class="" style="position: relative; display: inline;"><div class="white-space-pre text-truncate   ml-1">4</div></div></td><td class="align-middle" aria-label="actionDate"><div class="" style="position: relative; display: inline;"><div class="white-space-pre text-truncate   ml-1"><div aria-label="actionDate-dateTime">2024-02-05 16:05:28</div></div></div></td><td class="align-middle" aria-label="userName"><div class="" style="position: relative; display: inline;"><div class="white-space-pre text-truncate   ml-1">Thomas PIGUET</div></div></td></tr><tr tabindex="0" class=""><td><div class="d-flex justify-content-center align-items-center w-100"><span class="mt-0 w-auto mr-1 cis-caret-right btn-sm c-icon c-icon-custom-size
+        icons font-sm"></span></div></td><td class="align-middle" aria-label="tableName"><div class="" style="position: relative; display: inline;"><div class="white-space-pre text-truncate   ml-1">EndpointSecurities</div></div></td><td class="align-middle" aria-label="recordId"><div class="" style="position: relative; display: inline;"><div class="white-space-pre text-truncate   ml-1">3</div></div></td><td class="align-middle" aria-label="actionDate"><div class="" style="position: relative; display: inline;"><div class="white-space-pre text-truncate   ml-1"><div aria-label="actionDate-dateTime">2024-02-05 16:05:28</div></div></div></td><td class="align-middle" aria-label="userName"><div class="" style="position: relative; display: inline;"><div class="white-space-pre text-truncate   ml-1">Thomas PIGUET</div></div></td></tr><tr tabindex="0" class=""><td><div class="d-flex justify-content-center align-items-center w-100"><span class="mt-0 w-auto mr-1 cis-caret-right btn-sm c-icon c-icon-custom-size
+        icons font-sm"></span></div></td><td class="align-middle" aria-label="tableName"><div class="" style="position: relative; display: inline;"><div class="white-space-pre text-truncate   ml-1">EndpointSecurities</div></div></td><td class="align-middle" aria-label="recordId"><div class="" style="position: relative; display: inline;"><div class="white-space-pre text-truncate   ml-1">2</div></div></td><td class="align-middle" aria-label="actionDate"><div class="" style="position: relative; display: inline;"><div class="white-space-pre text-truncate   ml-1"><div aria-label="actionDate-dateTime">2024-02-05 16:05:28</div></div></div></td><td class="align-middle" aria-label="userName"><div class="" style="position: relative; display: inline;"><div class="white-space-pre text-truncate   ml-1">Thomas PIGUET</div></div></td></tr><tr tabindex="0" class=""><td><div class="d-flex justify-content-center align-items-center w-100"><span class="mt-0 w-auto mr-1 cis-caret-right btn-sm c-icon c-icon-custom-size
+        icons font-sm"></span></div></td><td class="align-middle" aria-label="tableName"><div class="" style="position: relative; display: inline;"><div class="white-space-pre text-truncate   ml-1">EndpointSecurities</div></div></td><td class="align-middle" aria-label="recordId"><div class="" style="position: relative; display: inline;"><div class="white-space-pre text-truncate   ml-1">1</div></div></td><td class="align-middle" aria-label="actionDate"><div class="" style="position: relative; display: inline;"><div class="white-space-pre text-truncate   ml-1"><div aria-label="actionDate-dateTime">2024-02-05 16:05:28</div></div></div></td><td class="align-middle" aria-label="userName"><div class="" style="position: relative; display: inline;"><div class="white-space-pre text-truncate   ml-1">Thomas PIGUET</div></div></td></tr></tbody></table><div class="d-flex flex-wrap" aria-label="Pagination"> </div></div>3
+
+
 
 @code {
     private WeatherForecast[]? forecasts;
@@ -192,5 +77,6 @@ else
         public string? Summary { get; set; }
 
         public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
+
     }
 }
